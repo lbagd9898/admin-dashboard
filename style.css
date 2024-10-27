@@ -186,18 +186,22 @@ img {
 .cards {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.7fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 2em;
+    
 }
 
 .card {
-    width: max(40%, 300px);
-    height: 12rem;
+    width: clamp(15em, 25em, 25em);
+    height: 13rem;
     background-color: white;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 20fr;
     gap: 1em;
+    box-shadow: 5px 5px 5px rgb(165, 165, 165);
+    padding-right: 1em;
 }
 
 .stripe {
@@ -224,7 +228,6 @@ img {
 .svgs {
     display: flex;
     justify-content: right;
-    padding-right: 1em;
     gap: .5em;
 }
 
@@ -233,4 +236,56 @@ img {
     width: 25px;
 }
 
+.pop-ups {
+    background-color: white;
+    padding: 1em 2em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-right: 2em;
+    box-shadow: 3px 3px 6px rgb(165, 165, 165);
+}
+
+.pop-ups h2 {
+    font-size: 1.2rem;
+}
+
+.pop-ups > div:first-child, .pop-ups > div:nth-child(2) {
+    border-bottom: 1px solid var(--grey-color)
+}
+
+#trending-title {
+    margin-top: 2em;
+    font-size: 1.2em;
+    margin-bottom: 32px
+}
+
+.user-logos {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2em;
+}
+
+.user-logos svg{
+    height: 40px;
+    width: 40px;
+}
+
+.user-logos p {
+    margin: 0px;
+}
+
+.pop-ups2 {
+    background-color: white;
+    padding: 1em 2em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-right: 2em;
+    box-shadow: 3px 3px 6px rgb(165, 165, 165);
+
+}
 
