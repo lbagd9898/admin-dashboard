@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Oxanium:wght@200..800&display=swap');
+
+:root {
+    --pink-color: #fca5a5;
+    --grey-color: #e7e5e4;
+}
+
+* {
+    font-family: "Oxanium", sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    grid-row: 1;
+    grid-column: 2/3;
+    background-color: white;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    background-color: var(--pink-color);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    background-color: var(--grey-color);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 2em 1em;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 40%;
+}
+
+.search {
+    display: flex;
+    justify-content: left;
+    padding-left: 1em;
+    align-items: center;
+    flex-basis: 2;
+}
+
+input[type='search'] {
+    border-radius: 25px;
+    width: 55%;
+    height: 2rem;
+    border: none;
+    background-color: var(--grey-color);
+}
+
+img {
+    height: 20px;
+    width: 20px;
+    margin-right: .5em;
+    flex-basis: 1;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    padding-right: 2em;
+    justify-content: right;
+    gap: .5rem;
+    height: 50px;
+}
+
+.icons p {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.icon-svg {
+    height: 30px;
+    width: 30px;
+}
+
+.greeting {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50%;
+}
+
+.username {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 2em;
+}
+
+.user-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.hello p{
+    margin: 0px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 2em;
+    gap: 1em;
+}
+
+.buttons button {
+    padding: .75em 1.5em;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--pink-color);
+    font-size: .9rem;
+    font-weight: bold;
+    color: white;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.title img {
+    height: 50px;
+    width: 50px;
+    margin: 0px;
+}
+
+.title div {
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+}
+
+.options1 {
+    margin-top: 1em;
+}
+
+.options1 > * svg, .options2 > * svg {
+    width: 30px;
+    height: 30px;
+}
+
+.options1 > *, .options2 > * {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.options1 > * p, .options2 > * p {
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0px;
+}
+
+.options2 {
+    margin-top: 4em;
+}
+
+.your-projects >div:first-child, .announcements>div:first-child  {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cards {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card {
+    width: max(40%, 300px);
+    height: 12rem;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    gap: 1em;
+}
+
+.stripe {
+    background-color: #fed7aa;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+
+.text h1 {
+    font-size: 1.5em;
+    margin-bottom: 0px;
+}
+
+.text p {
+    margin: 0px;
+}
+
+.svgs {
+    display: flex;
+    justify-content: right;
+    padding-right: 1em;
+    gap: .5em;
+}
+
+.svgs svg {
+    height: 25px;
+    width: 25px;
+}
+
+
